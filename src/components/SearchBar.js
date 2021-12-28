@@ -5,7 +5,7 @@ const SearchBar = () => {
     <div className="input-group search-bar col-12">
       <div className="form-outline">
         <input type="search" id="form1" className="form-control" />
-        <label className="form-label" for="form1">
+        <label className="form-label" htmlFor="form1">
           Search
         </label>
       </div>
