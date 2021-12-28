@@ -1,7 +1,7 @@
-import ExpenseItem from "./components/ExpenseItem";
+import Page from "./components/Page";
 
 const App = () => {
-
-}
+    return(<Page/>);
+};
 
 export default App;
