@@ -2,7 +2,7 @@ import SearchBar from "./SearchBar";
 
 const Navbar = () => {
     return(
-        <div className="row">
+        <div>
             <SearchBar/>
         </div>
     );
