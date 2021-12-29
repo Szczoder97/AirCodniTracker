@@ -25,7 +25,7 @@ Leaflet.Icon.Default.mergeOptions({
     const position = [lat, lng];
     
     return(
-        <div className="col-12 col-md-9">
+        <div className="col-md-9">
         <MapContainer
           center={position}
           zoom={zoom}
