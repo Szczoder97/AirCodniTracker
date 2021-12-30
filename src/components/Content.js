@@ -1,10 +1,10 @@
 import OptionList from "./OptionList";
 import Map from "./Map";
 
-const Content = () => {
+const Content = ({position, option}) => {
   return (
     <div className="row">
-      <Map lat={54.43333} lng={18.55} zoom={10} option={"usepa-aqi"} />
+      <Map position={position} zoom={11} option={"usepa-aqi"} />
       <OptionList />
     </div>
   );

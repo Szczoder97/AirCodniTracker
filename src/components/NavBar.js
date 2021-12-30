@@ -2,8 +2,8 @@ import { Component } from "react";
 import SearchBar from "./SearchBar";
 
 class Navbar extends Component {
-  onSearchSubmit = city => {
-    console.log(city);
+  onSearchSubmit = (citySearch) => {
+    this.props.onSearchSubmit(citySearch);
   };
 
   render() {

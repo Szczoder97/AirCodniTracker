@@ -9,10 +9,8 @@ class SearchBar extends Component {
   };
 
   onFormSubmit = (event) => {
-    console.log("wysylam");
-    //event.preventDefault();
-    //this.setState({ city: event.target.value })
     this.props.onSearchSubmit(this.state.city);
+    //event.preventDefault();
   };
 
   render() {
@@ -20,7 +18,7 @@ class SearchBar extends Component {
       <div className="form input-group my-5 col-sm-9 col-md-6 mx-auto">
         <input
           type="search"
-          id="form1"
+          name="form1"
           className="form-control"
           placeholder="Enter the city name"
           onChange={this.onInputChange}
@@ -28,7 +26,7 @@ class SearchBar extends Component {
         <button
           type="submit"
           className="btn btn-primary"
-          onSubmit={this.onFormSubmit}
+          onClick={this.onFormSubmit}
         >
           <i className="bi bi-search mr-2"></i>
           Search
