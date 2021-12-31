@@ -8,7 +8,7 @@ class SearchBar extends Component {
     this.setState({ city: event.target.value });
   };
 
-  onFormSubmit = (event) => {
+  onFormSubmit = () => {
     this.props.onSearchSubmit(this.state.city);
     //event.preventDefault();
   };
