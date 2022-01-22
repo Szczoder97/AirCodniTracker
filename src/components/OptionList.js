@@ -14,7 +14,7 @@ class OptionList extends Component {
         "Sulfur Dioxide": "usepa-so2",
         "Carbon Monoxide": "usepa-co",
       },
-    }
+    };
   }
 
   handleOptionChange = (optionKey) => {
@@ -24,13 +24,13 @@ class OptionList extends Component {
   render() {
     return (
       <div className="btn-group-vertical col-sm-6 col-md-3 mt-3 mt-md-0 mx-auto option-list">
-        {Object.keys(this.state.options).map( (key, index)=> {
+        {Object.keys(this.state.options).map((key, index) => {
           return (
             <Option
               key={index}
               optionKey={key}
               handleOptionChange={(optionKey) => {
-                this.handleOptionChange(optionKey)
+                this.handleOptionChange(optionKey);
               }}
             ></Option>
           );

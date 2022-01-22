@@ -5,11 +5,12 @@ class SearchBar extends Component {
   state = { city: "" };
 
   onInputChange = (event) => {
-    this.setState({ city: event.target.value });
+    this.setState({ city: event.target.value })
   };
 
   onFormSubmit = () => {
-    this.props.onSearchSubmit(this.state.city);
+    if(this.state.city.length > 2)
+      this.props.onSearchSubmit(this.state.city)
     //event.preventDefault();
   };
 
