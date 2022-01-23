@@ -26,7 +26,7 @@ class SearchBar extends Component {
         />
         <button
           type="submit"
-          className="btn btn-primary"
+          className="btn btn-success"
           onClick={this.onFormSubmit}
         >
           <i className="bi bi-search mr-2"></i>
