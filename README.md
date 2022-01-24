@@ -11,6 +11,9 @@ Click on the `Key` button to get the drop-down legend.
 ![key](/readme/2.PNG)
   
 
+## How does it work?
+The website uses Bootstrap which makes it responsive. It fetches coordinates of the searched city to get map tiles from Open Street Map and World Air Quality Index.
+
 ## Used tools
 App uses:
  - [React.js](https://reactjs.org/),
